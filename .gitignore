@@ -1,1 +1,11 @@
-.class
+# Ignora todos os arquivos com a extensão depois do ponto . class:
+
+*.class
+*.project
+
+# Ignora a pasta selecionada dentro do diretorio usado
+.metadata/
+
+# Ignora uma subpasta dentro de todas as outras pastas
+**/bin/
+**/.settings/
