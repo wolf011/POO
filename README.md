@@ -4,5 +4,6 @@
  
 ## Tecnologias utilizadas: 
  
-Java 17
-IDE = Eclipse
+	- Java 17
+
+	- IDE = Eclipse
