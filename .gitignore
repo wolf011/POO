@@ -2,6 +2,7 @@
 
 *.class
 *.project
+*.classpath
 
 # Ignora a pasta selecionada dentro do diretorio usado
 .metadata/
