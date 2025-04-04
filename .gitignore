@@ -1,12 +1,33 @@
-# Ignora todos os arquivos com a extensão depois do ponto . class:
-
+# Compiled class files
 *.class
-*.project
-*.classpath
 
-# Ignora a pasta selecionada dentro do diretorio usado
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Virtual machine crash logs
+hs_err_pid*
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+tmp/
 .metadata/
-
-# Ignora uma subpasta dentro de todas as outras pastas
-**/bin/
-**/.settings/
