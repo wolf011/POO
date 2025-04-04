@@ -1,10 +1,11 @@
 package exercicios;
 
 public class Fatoriais {
-	public static void main(String[] args) {
-		System.out.println(fatorial(1));
-		System.out.println(fatorial(2));
-		System.out.println(fatorial(3));
+	public static void main(String[]	args) {
+		for (double j = 1.; j < 11.; j++) {
+			System.out.println(j + "! = " + fatorial(j));
+		}
+
 	}
 
 	public static double fatorial(double a) {

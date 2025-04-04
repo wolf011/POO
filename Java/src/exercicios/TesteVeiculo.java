@@ -24,6 +24,7 @@ public class TesteVeiculo {
 		
 //		Inferência  -- permite que a variável só receba um tipo quando ela recebe o seu valor.
 		var texto = "Aula de Java";
+		
 //		texto = 10;		// erro
 		var aula = veiculo;
 		

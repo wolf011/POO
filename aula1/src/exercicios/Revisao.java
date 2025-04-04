@@ -1,7 +1,5 @@
 package exercicios;
 
-import java.util.Iterator;
-
 public class Revisao {
 	
 	public static void main(String[] args) {
