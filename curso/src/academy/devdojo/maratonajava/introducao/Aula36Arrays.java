@@ -9,12 +9,12 @@ public class Aula36Arrays {
 		dias[1][0] = 31;
 		dias[1][1] = 28;
 
-        for (int i = 0; i< dias.length; i++){
-            for (int j = 0; j< dias[0].length; j++){
-                System.out.println(dias[i][j]);
-            }
+		for (int i = 0; i < dias.length; i++) {
+			for (int j = 0; j < dias[0].length; j++) {
+				System.out.println(dias[i][j]);
+			}
 
-        }
+		}
 //		Foreach
 		for (int[] arrBase : dias) {
 			for (int num : arrBase) {
@@ -33,7 +33,7 @@ public class Aula36Arrays {
 			System.out.println("\n-----");
 			for (int num : arrayBase) {
 				System.out.print(num + " ");
-				
+
 			}
 		}
 	}
