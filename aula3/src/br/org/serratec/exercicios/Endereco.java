@@ -1,10 +1,10 @@
 package br.org.serratec.exercicios;
 
 public class Endereco {
-    protected String rua;
-    protected String bairro;
-    protected String cep;
-    protected Cidade cidade;
+    private String rua;
+    private String bairro;
+    private String cep;
+    private Cidade cidade;
     
     
     public Endereco(String rua, String bairro, String cep, Cidade cidade) {

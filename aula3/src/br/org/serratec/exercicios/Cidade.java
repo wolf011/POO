@@ -1,8 +1,8 @@
 package br.org.serratec.exercicios;
 
 public class Cidade {
-    protected String nomeCidade;
-    protected Estado estado;
+    private String nomeCidade;
+    private Estado estado;
 
 
     public Cidade(String nomeCidade, Estado estado) {

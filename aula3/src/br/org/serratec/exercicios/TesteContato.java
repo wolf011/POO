@@ -3,7 +3,6 @@ package br.org.serratec.exercicios;
 import java.util.Scanner;
 
 public class TesteContato {
-	Scanner scan = new Scanner(System.in);
 	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -27,16 +26,16 @@ public class TesteContato {
 		
 
 		System.out.println("Digite seu Município: ");
-		String Mun = scan.nextLine(); 
+		String municipio = scan.nextLine(); 
 
 
 		System.out.println("Digite seu Estado: ");
-		String UF1 = scan.nextLine();
+		String uf1 = scan.nextLine();
 		System.out.println("Digite seu UF: ");
-		String UF2 = scan.nextLine(); 
+		String uf2 = scan.nextLine(); 
 		
-		Estado estado = new Estado(UF1, UF2);     
-        Cidade cidade = new Cidade(Mun, estado);    
+		Estado estado = new Estado(uf1, uf2);     
+        Cidade cidade = new Cidade(municipio, estado);    
         Endereco endereco = new Endereco(rua, bairro, cep, cidade);
 
         
@@ -66,6 +65,7 @@ public class TesteContato {
         
         System.out.println(contato.toString());
         contato.getTelefones();
+        scan.close();
     }
 }
 

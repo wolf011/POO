@@ -1,11 +1,11 @@
 package br.org.serratec.exercicios;
 
-import java.util.*;
+//import java.util.*;
 
 public class Contato {
-    protected String nome;
-    protected Telefone[] listaTelefonica;
-    protected Endereco endereco;
+    private String nome;
+    private Telefone[] listaTelefonica;
+    private Endereco endereco;
 
     
     public Contato(String nome, Endereco endereco, Telefone[] listaTelefonica) {

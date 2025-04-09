@@ -1,8 +1,8 @@
 package br.org.serratec.exercicios;
 
 public class Estado {
-    protected String nomeEstado;
-    protected String sigla;
+    private String nomeEstado;
+    private String sigla;
     
     
     public Estado(String nomeEstado, String sigla) {
