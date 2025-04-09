@@ -1,17 +1,11 @@
 package br.org.serratec.exercicios;
 
 public class Vendedor {
-
-	public static void main(String[] args) {
-
-	}
-	
 	private String nome;
 	private String cpf;
 	
 	
 	public Vendedor(String nome, String cpf) {
-		super();
 		this.nome = nome;
 		this.cpf = cpf;
 	}
