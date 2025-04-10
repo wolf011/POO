@@ -1,6 +1,6 @@
 package br.org.serratec.exercicios;
 
-public class Vendedor {
+public abstract class Vendedor {
 	private String nome;
 	private String cpf;
 	
