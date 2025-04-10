@@ -30,4 +30,11 @@ public class Moto extends Veiculo{
 		return TipoServico.REVISAO.getValorPorServico();
 	}
 	
+	
+	@Override
+	public String toString() {
+		return super.toString() + ", cilindradas = " + cilindradas;
+	}
+
+	
 }

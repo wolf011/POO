@@ -48,4 +48,11 @@ public class Carro extends Veiculo {
 			return TipoServico.REVISAO.getValorPorServico();
 		}
 	}
+
+
+	@Override
+	public String toString() {
+		return super.toString() + ", categoria = " + categoria;
+	}
+
 }
