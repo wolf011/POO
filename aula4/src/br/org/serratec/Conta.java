@@ -9,6 +9,7 @@ public interface Conta {
 //	Implicitamente absctract
 	public abstract Boolean saque(Double valor);
 	public void deposito(Double valor);
+	public void investimentos(Double valor);
 	
 	
 	

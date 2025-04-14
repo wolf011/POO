@@ -1,5 +1,7 @@
 package br.org.serratec;
 
+import br.org.serratec.exception.ContaCorrenteException;
+
 public class ContaCorrente implements Conta{  // Assim que se cria a realção com a Interface. Além disso podemos chamar várias Interfaces, diferentemente de classes.
 	private String titular;
 	private Double saldo;
@@ -35,7 +37,7 @@ public class ContaCorrente implements Conta{  // Assim que se cria a realção c
 			System.out.println("Saldo atual: " + saldo);
 			return true;
 		}
-		return false;
+		throw new ContaCorrenteException("Saldo insuficiente");
 	}
 
 	
@@ -43,10 +45,11 @@ public class ContaCorrente implements Conta{  // Assim que se cria a realção c
 	public void deposito(Double valor) {
 		if (valor > 0) {
 			saldo += valor;
-		} else {
-			System.out.println("Valor inválido!");
 		}
+		throw new ContaCorrenteException("Valor igual ou inferior a zero."); //encerra a execução
 	}
-	
-
+	@Override
+	public void investimentos(Double valor) throws ContaCorrenteException{	// Joga o encerramento para o tratamento
+		saldo = saldo - valor;
+	}
 }
