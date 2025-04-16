@@ -45,7 +45,7 @@ public abstract class AnimalDeEstimacao implements Animal {
 	
 	@Override
 	public String imprimir() {
-		return "Animal: " + nome + ", Idade: " + idade + status;
+		return "Animal: " + nome + ", Idade: " + idade;
 
 	}
 

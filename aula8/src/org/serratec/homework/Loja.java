@@ -27,7 +27,20 @@ public class Loja {
 	}
 	
 	
-	public void adotarAnimal(int index) {
+	public void adotarAnimal(int index) throws IndexOutOfBoundsException {
+		Animal animal = animais.get(index);
+		if (animal instanceof AnimalDeEstimacao) {
+			AnimalDeEstimacao a = (AnimalDeEstimacao) animal;
+			
+			if (a.isAdotado()) {
+				throw new AnimalException("Este animal já adotado.");
+			} else {
+				a.setStatus(true);
+				System.out.println("Você adotou: " + a.imprimir());
+			}
+		}
+		
+		
 //		if (index < 0 && index < animais.size()) {
 //			throw  new AnimalException("Animal não encontrado!");
 //		} 
@@ -39,17 +52,18 @@ public class Loja {
 //		animais.get(index).setStatus(true);
 //		animais.remove(index);
 		
-		Animal animal = animais.get(index);
-		if (animal instanceof AnimalDeEstimacao) {
-	        AnimalDeEstimacao a = (AnimalDeEstimacao) animal;
-
-	        if (a.isAdotado()) {
-	            throw new AnimalException("Este animal já foi adotado.");
-	        } else {
-	            a.setStatus(true);
-	            System.out.println("Você adotou:" + a);
-	            a.imprimir();
-	        }
-		}
+//		if (animal instanceof AnimalDeEstimacao) {
+//	        AnimalDeEstimacao a = (AnimalDeEstimacao) animal;
+//
+//	        if (a.isAdotado()) {
+//	            throw new AnimalException("Este animal já foi adotado.");
+//	        } else {
+//	            a.setStatus(true);
+//	            System.out.println("Você adotou:" + a);
+//	            a.imprimir();
+//	        }
+//		}
 	}
+	
+	
 }

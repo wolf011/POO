@@ -21,9 +21,12 @@ public class TesteLoja {
 			lojinha.adotarAnimal(2);
 			lojinha.adotarAnimal(2);
 
-		} catch (AnimalException e) {
+		}catch (AnimalException e) {
 			System.out.println(e.getMessage());
 
+		} 
+		catch (IndexOutOfBoundsException e) {
+			System.out.println("Não existe animal nessa posição");
 		}
 
 	}
