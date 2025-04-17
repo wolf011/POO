@@ -30,39 +30,15 @@ public class Loja {
 	public void adotarAnimal(int index) throws IndexOutOfBoundsException {
 		Animal animal = animais.get(index);
 		if (animal instanceof AnimalDeEstimacao) {
-			AnimalDeEstimacao a = (AnimalDeEstimacao) animal;
+			AnimalDeEstimacao bicho = (AnimalDeEstimacao) animal;
 			
-			if (a.isAdotado()) {
+			if (bicho.isAdotado()) {
 				throw new AnimalException("Este animal já adotado.");
 			} else {
-				a.setStatus(true);
-				System.out.println("Você adotou: " + a.imprimir());
+				bicho.setStatus(true);
+				System.out.println("Você adotou: " + bicho.imprimir());
 			}
 		}
-		
-		
-//		if (index < 0 && index < animais.size()) {
-//			throw  new AnimalException("Animal não encontrado!");
-//		} 
-//		animal = animais.get(index);
-//		if (animal.ad)
-//		
-//		
-//		System.out.println("Você adotou um " + animais.get(index).imprimir());
-//		animais.get(index).setStatus(true);
-//		animais.remove(index);
-		
-//		if (animal instanceof AnimalDeEstimacao) {
-//	        AnimalDeEstimacao a = (AnimalDeEstimacao) animal;
-//
-//	        if (a.isAdotado()) {
-//	            throw new AnimalException("Este animal já foi adotado.");
-//	        } else {
-//	            a.setStatus(true);
-//	            System.out.println("Você adotou:" + a);
-//	            a.imprimir();
-//	        }
-//		}
 	}
 	
 	
