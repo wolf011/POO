@@ -1,20 +1,20 @@
-package org.serratec.homework;
-
-public abstract class exercicoExtra {
-//	faça uma classe para representar um conjunto de números reais 
-//	de no máximo 100 elementos, nesta classe deve-se ter as seguintes operacoes:
-//	    a. inserir elemento
-//	    b. remover elemento
-//	    c. pertence (se um elemento pertence ou nao ao conjunto)
-//	    d. esta contido (se um conjunto esta contido no outro)
-//	    e. uniao
-//	    f. intersecao
-//	    g. subtração de conjuntos
-//	    
-//	OBS: Obrigatoriamente use o programa principal abaixo. 
-
-	
-
+//package org.serratec.homework;
+//
+//public abstract class exercicoExtra {
+////	faça uma classe para representar um conjunto de números reais 
+////	de no máximo 100 elementos, nesta classe deve-se ter as seguintes operacoes:
+////	    a. inserir elemento
+////	    b. remover elemento
+////	    c. pertence (se um elemento pertence ou nao ao conjunto)
+////	    d. esta contido (se um conjunto esta contido no outro)
+////	    e. uniao
+////	    f. intersecao
+////	    g. subtração de conjuntos
+////	    
+////	OBS: Obrigatoriamente use o programa principal abaixo. 
+//
+//	
+//
 //	public class Main {
 //		public static void main(String[] args) {
 //			Conjunto a, b, c, d, e;
@@ -51,4 +51,4 @@ public abstract class exercicoExtra {
 //			}
 //		}
 //	}
-}
+//}
